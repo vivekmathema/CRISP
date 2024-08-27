@@ -1,0 +1,1 @@
+Can be used to store processed GAN contour images including augmented images

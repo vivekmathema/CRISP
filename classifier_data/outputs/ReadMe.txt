@@ -1,0 +1,1 @@
+Can keep misc. outputs of classifier, including agumented images for training

@@ -1,0 +1,1 @@
+Evaluation results including copy of mode las backup is tored here. all charts, other values and classifier training graphs are stored here

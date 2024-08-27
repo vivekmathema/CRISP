@@ -1,0 +1,1 @@
+Temporary non-essential files will be created here. Users can delete this folder whenever deemed suitable

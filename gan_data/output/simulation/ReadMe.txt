@@ -1,0 +1,1 @@
+Can be used to store simulated image during preview of  model training

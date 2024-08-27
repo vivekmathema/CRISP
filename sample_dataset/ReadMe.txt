@@ -1,0 +1,2 @@
+The output of dataset build for classifier training are stored here
+Once build is complete, copy this folder to './classifier_data/datasets" for usin as as model training/validation & inferencing based on your requirments.

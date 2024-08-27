@@ -1,0 +1,1 @@
+All traiend gan models are stored here by default including their configuration and model summary

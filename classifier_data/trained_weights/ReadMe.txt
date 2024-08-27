@@ -1,0 +1,1 @@
+Traiend model weights including their configuration is stored here by default

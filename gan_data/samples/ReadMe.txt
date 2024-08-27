@@ -1,0 +1,1 @@
+The synthsized GAN contour images from a trained GAN model are stored here by default

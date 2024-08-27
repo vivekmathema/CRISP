@@ -1,0 +1,1 @@
+Training contour images can be stored (or user can directly choose from the training source location.
