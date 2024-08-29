@@ -6,7 +6,7 @@ download link: https://drive.google.com/file/d/14tNARCubVuezb8WfIUCIzzoATwvghPs3
 
 Pleaase Note ONLY during the review process, the file is passcode protected
 
-In addiiton to these files, Users may required to install MS MC destribution library if some CUDA-support library files are missing
+In addiiton to these files, Users may required to install MS Visual C++ library destribution  if some CUDA-supportlibrary files are missing
 
 MS visual C++ destribution link: https://drive.google.com/file/d/1aSzn8cbMDICrXjG4WZyqkr5tNdYu2sro/view?usp=sharing
 
