@@ -1,6 +1,6 @@
 Traiend Contour Classifier model weights including their configuration is stored here by default
 
-Downlaod and extarct the traiend weight mdoels for AGTH Full and deepstacjed GCxGC-TOFMS contour classifier from follow:
+Download and extarct the traiend weight mdoels for AGTH Full and deepstacjed GCxGC-TOFMS contour classifier from follow:
 The models are ready to inference and should generate similar results as in the manuscript for given inference cohorts
 
 Link:  https://drive.google.com/file/d/17liXwC7JBWDwOCNwsYJwuVg1JlmQbZDc/view?usp=sharing
