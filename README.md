@@ -3,7 +3,7 @@
 1. **General Information**  
 Two-dimensional gas chromatography time-of-flight mass spectrometry (GC×GC-TOFMS) is a highly effective technique for metabolomics analysis, but leveraging its contour images for metabolite profiling is challenging due to the scarcity of metabolite identification libraries and advanced bioinformatics tools. To accelerate the analysis of GC×GC-TOFMS data, we developed CRISPII, a deep learning approach that utilizes combiantion of multiple operations including adaptive gradient thresholding-based identification, simulation, for effective profiling of multiclass separations in GC×GC-TOFMS metabolomics data. This study presents substantial improvements over our earlier CRISP software, which was limited to classifying two types of GC×GC-TOFMS metabolomic data. CRISP enhances the utility of aggregate feature representative images and introduces multiclass-compatible gradient thresholding-assisted ROI stacking for profiling GC×GC-TOFMS contours. The CRISP pipeline supports semi-automatic ROI identification for feature enrichment and classification of GC×GC-TOFMS contour images. Additionally, it includes contour synthesis through a generative adversarial network for data augmentation in cases of sparse samples. This manual guides users in utilizing the various options available in CRISP to tailor it to specific datasets or operations.
 
-## 2. Software Architecture and Operation Guidelines**  
+## 2. Software Architecture and Operation Guidelines
 CRISP is designed to directly input GC×GC-TOFMS contour images generated from ChromaTOF for training and profilining. It comprises three main components:
 
  <img src="/images/crisp-II_gui.jpg" alt="Fully operational graphical user interface of CRISP-II"/>
@@ -79,12 +79,12 @@ Install the requirement for the minimum CPU version of the python
 
 **The standalone windows package for GPU version of CRISPII. This is a recommended setup for non-technical users. User can directly downloaded the pre-built package and run the CRISP out-of-the-box**
 ```
-https://github.com/vivekmathema/GCxGC-CRISPII/edit/main/README.md
+[ upon acceptance of manuscript ] 
 ```
 
 **The standalone windows package for CPU version of CRISPII ( Very Slow for training. Slow but relatively simple to install and inference than GPU version. Will be uploaded upon acceptance of manuscript )** 
 ```
-https://github.com/vivekmathema/GCxGC-CRISPII/edit/main/README.md
+[ upon acceptance of manuscript ]
 ```
 
 For creating Anaconda environment as OS independent version of CRISP-II, we currently recommend to use only CPU version. The GPU version requires moderate to advance CUDA installation knowledge for Linux and may not be suitable for starters.
