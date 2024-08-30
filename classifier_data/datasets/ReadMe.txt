@@ -9,9 +9,10 @@ Zipped datasets conatins following folders for source GCxGC-TOFMS data training 
 
 classifier_data/datasets/
 ...
-1. AGTH_CKD-GCxGCTOFMS_DATA
-2. AGTH_CKD-GCxGCTOFMS_DATA_deepstack
-3. NRML_CKD-GCxGCTOFMS_DATA
-4. NRML_CKD-GCxGCTOFMS_DATA_deepstack
+1. AGTH_CKD-GCxGCTOFMS_DATA_DISEASE
+2. AGTH_CKD-GCxGCTOFMS_DATA
+3. AGTH_CKD-GCxGCTOFMS_DATA_deepstack
+4. NRML_CKD-GCxGCTOFMS_DATA
+5. NRML_CKD-GCxGCTOFMS_DATA_deepstack
 
 
