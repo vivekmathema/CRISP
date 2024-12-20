@@ -7,12 +7,9 @@ NOTE: The review version of the data is passcode protected
 Goog drive link: https://drive.google.com/file/d/1zWmq6cH5Ftamp4DlY9egZQe1w5mtBVfb/view?usp=sharing
 
 
-Source in house validated GCxGC-TOFMS datasets :
+Contour image source for in-house clinically validated GCxGC-TOFMS datasets :
 
-1. AGTH_CKD-COHORT-II_GCxGC-TOFMS
-2. AGTH_CKD-COHORT-II_GCxGC-TOFMS_deepstack
-3. AGTH_CKD-COHORT-II_GCxGC-TOFMS_disease
-4. AGTH_CKD-GCxGCTOFMS_DATA
-5. AGTH_CKD-GCxGCTOFMS_DATA_deepstack
-6. CKD-COHORT-II_GCxGC-TOFMS_deepstack
-7. CKD-GCxGCTOFMS_DATA
+1. AGTH_CKD-COHORT-II_GCxGC-TOFMS_disease
+2. AGTH_CKD-COHORT-II_GCxGC-TOFMS
+3. CKD-GCxGCTOFMS_DATA
+4. AGTH_CKD-COHORT-II_GCxGC-TOFMS_deepstack
