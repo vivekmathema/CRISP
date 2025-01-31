@@ -63,6 +63,9 @@ ii **GC×GC-TOFMS Inference:**
 This is the final step of the CRISP platform, where the trained classifier model is used to infer unknown samples based on preset thresholds. The GUI offers real-time visualization of classification and validation accuracy, as well as the model loss function, allowing users to instantly review the trained model's history. The inference step also generates general statistics for the validation cohort. Heatmaps for the inference samples can be created along with the watermarked inference output. Models can continue training with updated datasets, and the training configuration can be saved for future use and inference on unknown samples. A report file is generated, including the source images used for inference, and optionally tagged images, heatmaps, and their corresponding classification confidence. Further details of both training and inference can be found in user manual.
 
 ### 3. **Setup and Miscellioneous**
+
+**Current issues with docker**
+The CRISP-II has major GUI activities which currently is not fully supported cuasing it failure in UI-associated opreration. We are actively looking to this issue and will try to resolve in future. Thus, at present, users can directly utilize the source code and supplied pre-installed environment. Most UI target users that operate ChromaTOF can easilty make full use of CRISPII in windows using the provided portable out-of-box package.
    
 **Dataset class(or group) name annotation rules**
 --> Classes are represented by their folder name inside main source folder  (e.g: HD_DMs, HD_NO_DMs, PD_DMs, PD_NO_DMs,and NORMAL) which is automatically used as class ID 
