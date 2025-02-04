@@ -5,7 +5,7 @@ Passcode for datasets (and open links to the training materials) will be publish
 ```
 Google drive download link: https://drive.google.com/file/d/1a8lhTHZrHz0C_362NbJhTfClG-vgPUWy/view?usp=sharing
 ```
-Zipped datasets conatins following folders for source GCxGC-TOFMS data training (each folder within conatins Train/Test/Inference for Training & model validation) : 
+Zipped datasets contains following folders for source GCxGC-TOFMS data training (each folder within conatins Train/Test/Inference for Training & model validation) : 
 
 classifier_data/datasets/
 ...
