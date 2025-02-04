@@ -8,6 +8,16 @@ CRISP is designed to directly input GC×GC-TOFMS contour images generated from C
 
  <img src="/images/crisp-II_gui.jpg" alt="Fully operational graphical user interface of CRISP-II"/>
 
+### CRISP-II Workflow
+CRISPII provides a user-friendly interface for analyzing GC×GC-TOFMS contour images from blood plasma samples of DKD patients and healthy controls. The pipeline supports diverse experimental designs and involves:
+
+ <img src="/images/CRISPII_Summary.jpg" alt="Fully operational graphical user interface of CRISP-II"/>
+
+(a) **Data Import:** Preprocess and import GC×GC-TOFMS contour images.
+(b) **Conventional Analysis:** Perform standard metabolomics methods (e.g., PCA).
+(c) **Feature Extraction:** Build enriched contour datasets, with optional GAN-based augmentation and transfer learning to train a multiclass CNN classifier.
+(d) **Model Validation and Usage:** Validate the trained classifier model and infer results on unknown samples.
+
 ### A. ROI & Deep Stacking  
   i.   Manual extraction of GC×GC-TOFMS contour images for pre-processing  
   ii.  Construction of single and multiclass Aggregate Feature Resresentative image (AFRC)  
