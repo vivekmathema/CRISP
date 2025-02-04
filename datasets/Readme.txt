@@ -4,7 +4,7 @@ Only partial dataset are provided here as seperate folder
 
 NOTE: The review version of the data is passcode protected
 
-Goog drive link: https://drive.google.com/file/d/1zWmq6cH5Ftamp4DlY9egZQe1w5mtBVfb/view?usp=sharing
+Google drive link: https://drive.google.com/file/d/1zWmq6cH5Ftamp4DlY9egZQe1w5mtBVfb/view?usp=sharing
 
 
 Contour image source for in-house clinically validated GCxGC-TOFMS datasets :
