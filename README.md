@@ -90,14 +90,15 @@ Install the requirement for the minimum GPU version of the python
 Install the requirement for the minimum CPU version of the python
  pip install -r requirements_cpu.txt
 
+NOTE: Current review version of as passcode protected as supplied in manuscript to maintain data  confidentiality.  
 **The standalone windows package for GPU version of CRISPII. This is a recommended setup for non-technical users. User can directly downloaded the pre-built package and run the CRISP out-of-the-box**
 ```
-[ upon acceptance of manuscript ] 
+https://drive.google.com/file/d/1I1onohkwufnGpj_hkeOM9Im-DIZHWDqn/view?usp=sharing
 ```
 
 **The standalone windows package for CPU version of CRISPII ( Very Slow for training. Slow but relatively simple to install and inference than GPU version. Will be uploaded upon acceptance of manuscript )** 
 ```
-[ upon acceptance of manuscript ]
+https://drive.google.com/file/d/1CG5dtI7HfMpCiWCn2a__wr6_opHBoE6w/view?usp=sharing
 ```
 
 For creating Anaconda environment as OS independent version of CRISP-II, we currently recommend to use only CPU version. The GPU version requires moderate to advance CUDA installation knowledge for Linux and may not be suitable for starters.
