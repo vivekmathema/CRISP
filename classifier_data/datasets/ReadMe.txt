@@ -1,7 +1,5 @@
 Download following folders containing Training and Inference datasets for classifier model derived from in-house clinically validated GCxGC-TOFMS samples.
 
-Passcode for datasets (and open links to the training materials) will be published after acceptance of manuscript.
-
 ```
 Google drive download link: https://drive.google.com/file/d/1a8lhTHZrHz0C_362NbJhTfClG-vgPUWy/view?usp=sharing
 ```
