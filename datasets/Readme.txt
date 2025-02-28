@@ -1,5 +1,4 @@
-Passcode free dataset will be published upon acceptance of manuscript.
-
+The files contain original GCxGC-TOFMS contour images used for pre-processing and training the models
 Please extract the data in under same name and location 
 
 Only partial dataset are provided here as seperate folder 
