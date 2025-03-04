@@ -1,10 +1,10 @@
 # **CRISP II: Leveraging Deep Learning for Multiclass Phenotyping in GC×GC-TOFMS of End-Stage Renal Disease Patients**
 
 1. **General Information**  
-Two-dimensional gas chromatography time-of-flight mass spectrometry (GC×GC-TOFMS) is a highly effective technique for metabolomics analysis, but leveraging its contour images for metabolite profiling is challenging due to the scarcity of metabolite identification libraries and advanced bioinformatics tools. To accelerate the analysis of GC×GC-TOFMS data, we developed CRISPII, a deep learning approach that utilizes combiantion of multiple operations including adaptive gradient thresholding-based identification, simulation, for effective profiling of multiclass separations in GC×GC-TOFMS metabolomics data. This study presents substantial improvements over our earlier CRISP software, which was limited to classifying two types of GC×GC-TOFMS metabolomic data. CRISP enhances the utility of aggregate feature representative images and introduces multiclass-compatible gradient thresholding-assisted ROI stacking for profiling GC×GC-TOFMS contours. The CRISP pipeline supports semi-automatic ROI identification for feature enrichment and classification of GC×GC-TOFMS contour images. Additionally, it includes contour synthesis through a generative adversarial network for data augmentation in cases of sparse samples. This manual guides users in utilizing the various options available in CRISP to tailor it to specific datasets or operations.
+Two-dimensional gas chromatography time-of-flight mass spectrometry (GC×GC-TOFMS) is a highly effective technique for metabolomics analysis, but leveraging its contour images for metabolite profiling is challenging due to the scarcity of metabolite identification libraries and advanced bioinformatics tools. To accelerate the analysis of GC×GC-TOFMS data, we developed CRISPII, a deep learning approach that utilizes combination of multiple operations including adaptive gradient thresholding-based identification, simulation, for effective profiling of multiclass separations in GC GC-TOFMS metabolomics data. This study presents substantial improvements over our earlier CRISP software, which was limited to classifying two types of GC×GC-TOFMS metabolomics data. CRISP enhances the utility of aggregate feature representative images and introduces multiclass-compatible gradient thresholding-assisted ROI stacking for profiling GC×GC-TOFMS contours. The CRISP pipeline supports semi-automatic ROI identification for feature enrichment and classification of GC GC-TOFMS contour images. Additionally, it includes contour synthesis through a generative adversarial network for data augmentation in cases of sparse samples. This manual guides users in utilizing the various options available in CRISP to tailor it to specific datasets or operations.
 
 ## 2. Software Architecture and Operation Guidelines
-CRISP is designed to directly input GC×GC-TOFMS contour images generated from ChromaTOF for training and profilining. It comprises three main components:
+CRISP is designed to directly input GC×GC-TOFMS contour images generated from ChromaTOF for training and profiling. It comprises three main components:
 
  <img src="/images/crisp-II_gui.jpg" alt="Fully operational graphical user interface of CRISP-II"/>
 
@@ -20,7 +20,7 @@ CRISPII provides a user-friendly interface for analyzing GC×GC-TOFMS contour im
 
 ### A. ROI & Deep Stacking  
   i.   Manual extraction of GC×GC-TOFMS contour images for pre-processing  
-  ii.  Construction of single and multiclass Aggregate Feature Resresentative image (AFRC)  
+  ii. Construction of single and multiclass Aggregate Feature Representative image (AFRC)  
   iii. Creation of single and multiclass deep stacking datasets  
 
 ### B. **GAN-based GC×GC-TOFMS Contour Image generator Training & Synthesis**  
@@ -37,13 +37,13 @@ Each module can function independently or in combination, depending on the desir
 
 This section allows users to manually select a single ROI either graphically or by inputting coordinates. It supports cropping the region to obtain a desired ROI (or image frame in this context) with various options such as resizing, applying image filters, and choosing the output file type. The extraction of initial contour data can be performed in Normal RGB color mode (no color changes), adaptive gradient thresholding (AGTH), or fixed gradient thresholding (FXTH) mode, depending on the user's preference. Once the contour data is extracted in a specific mode, the same mode setting must be used for all contour groups and future inferencing. Selection of an ROI is required for only one image per group folder, and all images in the folder will automatically have the same ROIs extracted in batch operation. For more details, refer to the CRISP-II User Manual.
 
-**ii.	Single and multiclass Aggregare feature respresentative contour image construction**
+**ii.	Single and multiclass Aggregate feature representative contour image construction**
 
  <img src="/images/crisp-ii_contour_extraction.jpg" alt="Fully operational graphical user interface of CRISP-II"/>
  
-This innovative procedure generalizes groups of contour images belonging to a specific class or group through weighted aggregate feature extraction. It enables dominant features to be prominently represented  in the final single representative image, while rare or outlier features are minimized algorithmically. This process yields an aggregate feature representative contour (AFRC) image that represents the common dominant features within the group, reducing manual selection bias. Parameters such as FPS, weight accumulation factor, and cyclic image duration control the number of features included in the final AFRC image. Various image augmentation techniques (e.g., blur, noise, erosion, dilation) can be applied during AFRC construction to enhance feature coverage. The AFRC image can then be automatically utilized in the subsequent module for Auto ROI detection and DeepStacking. This operation can also be performed in batches for all groups. For more details, refer to the CRISP-II User Manual.
+This innovative procedure generalizes groups of contour images belonging to a specific class or group through weighted aggregate feature extraction. It enables dominant features to be prominently represented in the final single representative image, while rare or outlier features are minimized algorithmically. This process yields an aggregate feature representative contour (AFRC) image that represents the common dominant features within the group, reducing manual selection bias. Parameters such as FPS, weight accumulation factor, and cyclic image duration control the number of features included in the final AFRC image. Various image augmentation techniques (e.g., blur, noise, erosion, dilation) can be applied during AFRC construction to enhance feature coverage. The AFRC image can then be automatically utilized in the subsequent module for Auto ROI detection and Deepstacking. This operation can also be performed in batches for all groups. For more details, refer to the CRISP-II User Manual.
 
-**iii.	ROIs identification and Single/Multiclass deesptacking dataset construction**
+**iii.	ROIs identification and Single/Multiclass deepstacking dataset construction**
 
  <img src="/images/crisp-II_ROis_and_Deepstacking.jpg" alt="Fully operational graphical user interface of CRISP-II"/>
 
@@ -60,7 +60,7 @@ In the image augmentation tab (Contour Synthesis -> Augmentation), users can app
 Training models and their history can be saved or restored at any point during the training, along with the configuration. Once the model is sufficiently trained (based on FID curves, model loss, and preview images), it can be used to synthesize entirely new contour plots without needing the original datasets (B. Contour Synthesis -> 3. Synthesize) in a customizable grid ranging from 1×1 to 10×10. An advanced option allows users to control the intensity of entities in the synthesized contour, which often corresponds to the concentration of metabolites. This feature works best when the source images have minimal background noise or column bleeding. Image augmentation can also be applied to the synthesized output contours, further increasing the diversity of the generated samples. Manipulating the Z-vector can lead to greater diversity in the generated samples. There are numerous other options available for image manipulation and preview modes based on custom requirements. For more details on working protocol, refer to the CRISP-II User Manual.
 
 ### C.	Multiclass GC×GC-TOFMS contour training & inference**
-This module is responsible for training  and profilining of f GC×GC-MSTOF contours with option to output inference result-tagged results and general statsitics of test samples.
+This module is responsible for training and profiling of GC×GC-MSTOF contours with option to output inference result-tagged results and general statistics of test samples.
 
  <img src="/images/crisp-ii_Profiler.jpg" alt="Fully operational graphical user interface of CRISP-II"/>
 
@@ -72,38 +72,38 @@ i **GC×GC-TOFMS Classifier Training:**  This submodule can train on multiple cl
 ii **GC×GC-TOFMS Inference:**  
 This is the final step of the CRISP platform, where the trained classifier model is used to infer unknown samples based on preset thresholds. The GUI offers real-time visualization of classification and validation accuracy, as well as the model loss function, allowing users to instantly review the trained model's history. The inference step also generates general statistics for the validation cohort. Heatmaps for the inference samples can be created along with the watermarked inference output. Models can continue training with updated datasets, and the training configuration can be saved for future use and inference on unknown samples. A report file is generated, including the source images used for inference, and optionally tagged images, heatmaps, and their corresponding classification confidence. Further details of both training and inference can be found in user manual.
 
-### 3. **Setup and Miscellioneous**
+### 3. **Setup and Miscellaneous**
 
 **Current issues with docker**
-The CRISP-II has major GUI activities which currently is not fully supported cuasing it failure in UI-associated opreration. We are actively looking to this issue and will try to resolve in future. Thus, at present, users can directly utilize the source code and supplied pre-installed environment. Most UI target users that operate ChromaTOF can easilty make full use of CRISPII in windows using the provided portable out-of-box package.
+The CRISP-II has major GUI activities which currently is not fully supported causing it failure in UI-associated operation. We are actively looking to this issue and will try to resolve in future. Thus, at present, users can directly utilize the source code and supplied pre-installed environment. Most UI target users that operate ChromaTOF can easily make full use of CRISPII in windows using the provided portable out-of-box package.
    
-**Dataset class(or group) name annotation rules**
---> Classes are represented by their folder name inside main source folder  (e.g: HD_DMs, HD_NO_DMs, PD_DMs, PD_NO_DMs,and NORMAL) which is automatically used as class ID 
---> The folder names should be same for both training & Validation cohort to make resulst reproduciblew & correct order of classes during training.
+**Dataset class (or group) name annotation rules**
+--> Classes are represented by their folder name inside main source folder (e.g: HD_DMs, HD_NO_DMs, PD_DMs, PD_NO_DMs, and NORMAL) which is automatically used as class ID 
+--> The folder names should be same for both training & validation cohort to make results reproducible and correct order of classes during training.
 --> Model stores the names of classes for annotation of inference results 
---> All samples for inference, validation  or test images should be pre-processed in same order as the classifier training contour image dataset.
+--> All samples for inference, validation or test images should be pre-processed in same order as the classifier training contour image dataset.
 
-Requirments for Python3 installation
+Requirements for Python3 installation
 Install the requirement for the minimum GPU version of the python
  pip install -r requirements_gpu.txt
 
 Install the requirement for the minimum CPU version of the python
  pip install -r requirements_cpu.txt
 
-NOTE: Current review version of as passcode protected as supplied in manuscript to maintain data  confidentiality.  
+NOTE: Current review version of as passcode protected as supplied in manuscript to maintain data confidentiality.  
 **The standalone windows package for GPU version of CRISPII. This is a recommended setup for non-technical users. User can directly downloaded the pre-built package and run the CRISP out-of-the-box**
 ```
 https://drive.google.com/file/d/1I1onohkwufnGpj_hkeOM9Im-DIZHWDqn/view?usp=sharing
 ```
 
-**The standalone windows package for CPU version of CRISPII ( Very Slow for training. Slow but relatively simple to install and inference than GPU version. Will be uploaded upon acceptance of manuscript )** 
+**The standalone windows package for CPU version of CRISPII (Very Slow for training. Slow but relatively simple to install and inference than GPU version. Will be uploaded upon acceptance of manuscript)** 
 ```
 https://drive.google.com/file/d/1CG5dtI7HfMpCiWCn2a__wr6_opHBoE6w/view?usp=sharing
 ```
 
 For creating Anaconda environment as OS independent version of CRISP-II, we currently recommend to use only CPU version. The GPU version requires moderate to advance CUDA installation knowledge for Linux and may not be suitable for starters.
 
-For GPU Version of Anaconda environment of CRISP. Users may have to Tweak the installation versions if any repository needs were updated or conda channel changes. These commands will simply install conda version of the pip3 requirements to run CRISP. Maynot not be suitable for some version of Ubuntu OS.
+For GPU Version of Anaconda environment of CRISP. Users may have to tweak the installation versions if any repository needs were updated or conda channel changes. These commands will simply install conda version of the pip3 requirements to run CRISP. May not be suitable for some version of Ubuntu OS.
 
 ```
 1) conda create --name GCxGC_CRISPII python=3.6
@@ -116,27 +116,27 @@ For GPU Version of Anaconda environment of CRISP. Users may have to Tweak the in
 
 4) (GCxGC_CRISPII env) conda >  python3  crsip.py
 
-CRISP Command line parameters infromation
+CRISP Command line parameters information
 
 python3 CRISP.py [-h | --help]
 [--gui_type GUI_TYPE] [--config_run CONFIG_RUN]
 [--config_fpath CONFIG_FPATH] [--run_session RUN_SESSION]
-optional arguments:
+Optional arguments:
 -h, --help Shows this command line help message and exits CRISP
 --gui_type GUI_TYPE
 Use different GUI Schemes. Five types available [ 0: Breeze, 1: Oxygen, 2: QtCurve, 3: Windows, 4:Fusion ]
---config_run CONFIG_RUN [Set 0: False, 1:True]. Run CRISPII in GUI mode ONLY. No configuration modules will be run and CRISP will open GUI with default settings
---config_fpath CONFIG_FPATH full pathname of the configuration file to run. The Confiruation file will be run without any user input or confrimation
---run_session RUN_SESSION [None,gan_train, gan_syn, cls_train, cls_inf] | None : Only loads gui with selected configuration. Following modes are avaialble
+--config_run CONFIG_RUN [Set 0: False, 1: True]. Run CRISPII in GUI mode ONLY. No configuration modules will be run and CRISP will open GUI with default settings
+--config_fpath CONFIG_FPATH full pathname of the configuration file to run. The Confirmation file will be run without any user input or confirmation
+--run_session RUN_SESSION [None, gan_train, gan_syn, cls_train, cls_inf] | None : Only loads gui with selected configuration. Following modes are available
                     gan_train  : Load and run gui for GAN model training
                     gan_syn    : Load and run gui for GAN synthesis
-                    cls_train  : Load and run gui for classifier training
-                    cls_inf    : Load and run gui for classifier inferencing
+                    cls_train   : Load and run gui for classifier training
+                    cls_inf       : Load and run gui for classifier inferencing
                     
-                    NOTE:  Commandline configuration run is not currently available for ROIs and DeepStacking. 
-                               Due to large numbers of parameters the defination of  each parameter is commented in configuration file itself. 
-                               The Definations of most parameters are presented as tool tip text in status bar of GUI nterface.
+                    NOTE:  Command line configuration run is not currently available for ROIs and Deepstacking. 
+                               Due to large numbers of parameters the definition of each parameter is commented in configuration file itself. 
+                               The Definitions of most parameters are presented as tool tip text in status bar of GUI interface.
 ```
 
-**_The CRISP software will undergo continuous development, with minor bugs being fixed over time. The primary goal of making the software open source is to enable a larger community to participate, contribute, and assist in the customization and development of deep learning-based techniques for GC×GC-TOFMS contour image metabolomics_.[Once the manuscript is accpeted, all soruce code will be made full available under suitable opensource software liscence ]**
+**The CRISP software will undergo continuous development, with minor bugs being fixed over time. The primary goal of making the software open source is to enable a larger community to participate, contribute, and assist in the customization and development of deep learning-based techniques for GC×GC-TOFMS contour image metabolomics.**
 
