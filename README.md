@@ -140,7 +140,7 @@ Use different GUI Schemes. Five types available [ 0: Breeze, 1: Oxygen, 2: QtCur
 
 **The CRISP software will undergo continuous development, with minor bugs being fixed over time. The primary goal of making the software open source is to enable a larger community to participate, contribute, and assist in the customization and development of deep learning-based techniques for GC×GC-TOFMS contour image metabolomics.**
 
-##Content License
+## Content License
 
 CRISP is licensed under Creative Commons Attribution 4.0 International (CC BY 4.0). Source code is available under the MIT License.
 
