@@ -1647,7 +1647,7 @@ class BaseClass(QtWidgets.QMainWindow ):   #  (QtWidgets.QMainWindow, Ui_MainWin
                 pass
 
             self.build_inference_samples( self.cls_dataset_dst_path + self.cls_dataset_id + "/Train/" ,          # source folder
-                                          self.cls_dataset_dst_path + self.cls_dataset_id  ,                       # destination folder where Inference_sampels folder will be created (i.e /Train/)
+                                          self.cls_dataset_dst_path + self.cls_dataset_id  ,                     # destination folder where Inference_sampels folder will be created (i.e /Train/)
                                           self.perc_sample_inference_val.value(),           # percentae of sampels within Tarining classes
                                           self.database_rseed_val.value()  )                # random seed
             
@@ -1664,7 +1664,7 @@ class BaseClass(QtWidgets.QMainWindow ):   #  (QtWidgets.QMainWindow, Ui_MainWin
 
         for folder in os.listdir(source_folder):
             folder = os.path.join(source_folder,folder)           
-            jpg_files = [os.path.join(folder,file) for file in os.listdir(folder) if file.lower().endswith('.jpg')]            # Get a list of all full pathnmaneJPEG files in the source folder        
+            jpg_files = [os.path.join(folder,file) for file in os.listdir(folder) if (file.lower().endswith('.jpg') or file.lower().endswith('.png'))]            # Get a list of all full pathnmaneJPEG files in the source folder        
       
             num_files_to_move      = int(len(jpg_files) * (percentage / 100))                             # Calculate the number of files to move based on the specified percentage        
             random.seed(random_seed)

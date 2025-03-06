@@ -1741,7 +1741,7 @@ class Model_GAN(BaseClass):
 
     def run_IAFG(self):
         if self.qm.question(self,"CRISP",
-                                 "Apply AFRC?  Note: Each Class image will be automatically replaced by single IAFG representative image" , 
+                                 "Apply AFRC?  Note: Each Class image will be automatically replaced by single AFRC representative image" , 
                                   self.qm.Yes | self.qm.No) == self.qm.No:
             return
 
@@ -1825,7 +1825,7 @@ class Model_GAN(BaseClass):
 
     def run_IAFG_multiclass(self):
         if self.qm.question(self,"CRISP-II",
-                                 "Apply multi-class AFRC?  Note: Each Class contour will yield single IAFG representative image" , 
+                                 "Apply multi-class AFRC?  Note: Each Class contour will yield single AFRC representative image" , 
                                   self.qm.Yes | self.qm.No) == self.qm.No:
             return
 
