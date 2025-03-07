@@ -109,11 +109,11 @@ https://drive.google.com/file/d/1hGafZGsIiq7V4Yiqh_kwEGsU0Aivzjqf/view?usp=shari
 MD5 checksum: 6b7bc869ab4d5b4cee0b843de43980bf
 ```
 
-**The latest updated datasets for classifier under "./classifier/datasets":**
+**The latest updated datasets for classifier under "./classifier/datasets/trained_weights":**
 ```
-[to put here ]
+https://drive.google.com/file/d/19gGKyn-D1dVUQW2H3bZUIGib0zv6uXeb/view?usp=sharing
 
-MD5 checksum:
+MD5 checksum: fee766d5141f24cc89152ade824d3fac
 ```
 
 
