@@ -99,7 +99,7 @@ NOTE: Current review version of as passcode protected as supplied in manuscript 
 ```
 https://drive.google.com/file/d/1UHxZd10cWxMEIkYmYZM41NIAP91jT8M9/view?usp=sharing
 
-MD% checksum:  c5c523b20b48622c01f2cc79fae08126
+MD5 checksum:  c5c523b20b48622c01f2cc79fae08126
 ```
 
 **The standalone windows package for CPU version of CRISPII (Very Slow for training. Slow but relatively simple to install and inference than GPU version. Will be uploaded upon acceptance of manuscript)** 
