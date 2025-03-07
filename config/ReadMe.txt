@@ -3,3 +3,5 @@ The file "settings.config" holds default settings for last saved setting by the 
 Users can store their own custom settinsg with custom names that can be loaded later
 
 Note: _disease group refers to Disease Classes without Normal
+
+how to use:  Settings Manu --> Load custom settings --> Select the file (located in crisp_root/config/)
