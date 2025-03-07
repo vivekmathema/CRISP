@@ -85,21 +85,37 @@ The CRISP-II has major GUI activities which currently is not fully supported cau
 
 Requirements for Python3 installation
 Install the requirement for the minimum GPU version of the python
+```
  pip install -r requirements_gpu.txt
+```
 
 Install the requirement for the minimum CPU version of the python
+```
  pip install -r requirements_cpu.txt
+```
 
 NOTE: Current review version of as passcode protected as supplied in manuscript to maintain data confidentiality.  
 **The standalone windows package for GPU version of CRISPII. This is a recommended setup for non-technical users. User can directly downloaded the pre-built package and run the CRISP out-of-the-box**
 ```
-https://drive.google.com/file/d/1I1onohkwufnGpj_hkeOM9Im-DIZHWDqn/view?usp=sharing
+https://drive.google.com/file/d/1UHxZd10cWxMEIkYmYZM41NIAP91jT8M9/view?usp=sharing
+
+MD% checksum:  c5c523b20b48622c01f2cc79fae08126
 ```
 
 **The standalone windows package for CPU version of CRISPII (Very Slow for training. Slow but relatively simple to install and inference than GPU version. Will be uploaded upon acceptance of manuscript)** 
 ```
-https://drive.google.com/file/d/1CG5dtI7HfMpCiWCn2a__wr6_opHBoE6w/view?usp=sharing
+https://drive.google.com/file/d/1hGafZGsIiq7V4Yiqh_kwEGsU0Aivzjqf/view?usp=sharing
+
+MD5 checksum: 6b7bc869ab4d5b4cee0b843de43980bf
 ```
+
+**The most updated datasets for classifer under "./classifier/datasets" is availabe as:**
+```
+[to put here ]
+
+MD5 checksum:
+```
+
 
 For creating Anaconda environment as OS independent version of CRISP-II, we currently recommend to use only CPU version. The GPU version requires moderate to advance CUDA installation knowledge for Linux and may not be suitable for starters.
 
@@ -130,8 +146,8 @@ Use different GUI Schemes. Five types available [ 0: Breeze, 1: Oxygen, 2: QtCur
 --run_session RUN_SESSION [None, gan_train, gan_syn, cls_train, cls_inf] | None : Only loads gui with selected configuration. Following modes are available
                     gan_train  : Load and run gui for GAN model training
                     gan_syn    : Load and run gui for GAN synthesis
-                    cls_train   : Load and run gui for classifier training
-                    cls_inf       : Load and run gui for classifier inferencing
+                    cls_train  : Load and run gui for classifier training
+                    cls_inf    : Load and run gui for classifier inferencing
                     
                     NOTE:  Command line configuration run is not currently available for ROIs and Deepstacking. 
                                Due to large numbers of parameters the definition of each parameter is commented in configuration file itself. 
