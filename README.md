@@ -154,7 +154,7 @@ Use different GUI Schemes. Five types available [ 0: Breeze, 1: Oxygen, 2: QtCur
                                The Definitions of most parameters are presented as tool tip text in status bar of GUI interface.
 ```
 
-**The CRISP software will undergo continuous development, with minor bugs being fixed over time. The primary goal of making the software open source is to enable a larger community to participate, contribute, and assist in the customization and development of deep learning-based techniques for GC×GC-TOFMS contour image metabolomics.**
+**The CRISP software will undergo continuous development, with minor bugs being fixed over time. Since it uses multiple deep learnining models (which are often black boxes) with myriad of options, the results may slightly vary from experiments to experiments. The primary goal of making the software open source is to enable a larger community to participate, contribute, and assist in the customization and development of deep learning-based techniques for GC×GC-TOFMS contour image metabolomics.**
 
 ## Content License
 
